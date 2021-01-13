@@ -1,0 +1,267 @@
+html,body
+{
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('b.jpg') no-repeat;
+   
+    background-attachment: fixed;
+    background-size: cover;
+  
+    margin: 0% 0% 0% 0%;   
+    
+}
+input[type="submit"]
+{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    margin-left:52%;
+    padding:0% 8% 2% 8%;
+    background-color: #ff3535;
+}
+input[type="submit"]:hover 
+{
+    background-color:  #ab0000;
+}
+td.links
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.fa-refresh
+{
+    cursor: pointer;
+}
+a 
+{
+    color:blue;
+}
+ table.master
+{
+    
+    border: 1px solid rgb(128,128,128,0.3);
+    width: auto;
+   
+    margin: 15% 0% 0% 0%;
+    background-color: rgba(128, 128, 128,);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  
+    -webkit-backdrop-filter: blur(2px);
+     backdrop-filter: blur(2px);
+    border-spacing: 0;
+    border-radius: 5px;
+}
+@media screen and (max-width: 800px) {
+   table.master {
+     width: 500px;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    div.foot0 p
+    {
+        font-size: 14px;
+    }
+}
+td.space 
+{
+    padding: 0px 30px 0px 0px;
+}
+table.login 
+{
+    border-spacing: 0;
+   width: auto;
+    background-color: transparent;
+    padding: 0px 40px 10px 40px;
+}
+td.captcha
+{
+    text-align: center;
+  
+    background-color: white;
+    border:1px solid  #ab0000;
+    border-radius: 3px;
+    color:#ab0000;
+    text-decoration: line-through;
+}
+table.header
+{
+   position:fixed;
+   width: 100%;
+   top:0;
+   z-index: +8;
+   margin-top: 0%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    border-spacing: 0; 
+   
+}
+body::-webkit-scrollbar {
+    width: 8px;
+   
+  }
+   
+  body::-webkit-scrollbar-track {
+      
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #ab0000;
+    border-radius: 2px;
+    outline: 1px solid slategrey;
+  }
+th.subhead 
+{
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    background-color:  #2B78CF;
+    color: white;
+    font-weight: normal;
+}
+th.heading 
+{
+    color:midnightblue;
+    font-size: 25px;
+    padding: 10px 0;
+    font-family: 'Baumans' ;
+    background-color: #5DADEC;
+}
+input[type="text"],input[type="password"],input[type="email"],input[type="date"]
+{
+    width: auto;
+    padding: 4px 4px 4px 8px;
+    font-size: 16px;
+    color:#2C3E50;;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    
+}
+.fa-user-shield
+{
+    background-color: #ab0000;
+    border-radius: 210px;
+    font-size: 24px;
+    padding: 17px;
+    border:0.1rem solid white;
+   color:ghostwhite;
+    margin: 4%;
+}
+div.error
+
+{
+
+position: absolute;
+width: 100%;
+margin-top: 4%;
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 20px;
+
+color: red;
+text-align: center;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+div.information
+
+{
+height: auto;
+position: fixed;
+width: 100%;
+bottom: 0;
+
+font-family: 'Kanit', sans-serif;
+font-size:14px;
+margin-bottom: 0%;
+color:grey;
+text-align: left;
+padding : 6px 150px;
+
+background-color:rgba(224,224,224);
+
+}
+.iconify
+            {
+                color: #ab0000;
+                font-size: 25px;
+                padding: 5px;
+            }
+p.dp 
+{
+    background-color: #ab0000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 3%;
+    border-radius: 7px;
+    color: white;
+    width: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: -1% 0% -3% 2%;
+}
+
+td.tdd 
+{
+    background-color: transparent;
+}
+
+.fa-user,.fa-mobile,.fa-calendar,.fa-refresh,.fa-eye,.fa-eye-slash,.fa-envelope
+{
+   color: #cd0000;
+    padding: 5px;
+    font-size: 20px;
+    
+}
+
+td.fao 
+{
+    background-color: white;
+    border:1px solid #ab0000;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+    
+  
+}
+td.faoo
+{
+    background-color: white;
+    border:1px solid#ab0000;
+   
+   border-radius: 3px;
+}
+td.fao:hover,td.faoo:hover
+{
+    background-color: #DCDCDC;
+    transition: 1s;
+   
+}
+
+td.fafa 
+{
+    background-color: white;
+    border: 1px solid #ab0000;
+    border-left:none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+input[type="text"],input[type="date"],input[type="password"],input[type="email"]
+{
+    border: none;
+    outline: none;
+    
+}
+::placeholder {
+                color: #ab0000;
+    
+
+  opacity: 1; /* Firefox */
+}
+th.foot 
+{
+    background-color: lightgray;
+}
