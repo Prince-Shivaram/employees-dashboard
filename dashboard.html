@@ -1,132 +1,170 @@
-<html>
-    <head>
-    <title>
-      Employee Login
-    </title>
-    <link rel = "icon" href =  
-        "https://image.flaticon.com/icons/fgfgsvg/183/183364.svg" 
-                type = "image/x-icon"> 
-        <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Kanit|Monoton&display=swap" rel="stylesheet">
-       <link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="style.css" rel="stylesheet">
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-       
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-       
-       
-        <style>
-     
-    
-   div.inform 
-{
-  background-color: rgba(255, 255, 255,0.2);
-  -webkit-backdrop-filter: blur(8px);
-     backdrop-filter: blur(8px);
-     
-     width: 100%;
-     color:#1C1C1C;
-}
-hr 
-{
-  box-shadow: none;
-  width: 80%;
-  border: none;
-  background: #a31016;
-  height: 1px;
-}
-   
-div.notice 
-   {
-       width: 60%;
-       text-align: justify;
-       color:black;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   }
-   body::-webkit-scrollbar-thumb {
-  background-color:rgba(171,0,0,0.5);
- 
-}
-   div.line 
-   {
-       border:none;
-       width: 80%;
-       border-bottom: 1px solid lightgray;
-     
-       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-       margin:0px 0px 10px 0px;
-   }
-  
-  th.heading 
-  {
-    font-family: 'Monoton', cursive;
-    font-weight: normal;
-  }
-  table.empdt 
-  {
-    width: 90%;
-    border:1px solid #f5f3f3;
-    margin-top: 10%;
-    border-collapse: collapse;
-   
-  -webkit-backdrop-filter: blur(8px);
-     backdrop-filter: blur(8px);
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 14px 0 rgba(0, 0, 0, 0.2);
-   background-color: rgba(255, 255, 255,0.6);
-    border-spacing: 0;
-     font-family: Candara;
-     color: black;
-  }
-  table.empdt th 
-  {
-   
-    font-size: 20px;
-    padding: 15px 0;
-    font-weight: normal;
-  }
- .rit 
-  {
-    border-right: 1px solid #ab0000;
-  }
-  table.empdt td 
-  {
-    text-align: center;
-    padding:  10px 0;
-  }
-      </style>
-    </head>
-    <body onload="return false" oncopy="return false" oncut="return false" onpaste="return false">
-        
-        <table class="header">
-            <tr><th colspan="2" class="heading">Account Dashboard</th></tr>
-           <tr><th class="subhead" colspan="2">Employees Data</th></tr>
-        </table>
-        
-        <br/><br/>
-         
-        <br/><br/>
-        <br/><br/>
-         
-        <br/><br/>
-        <center>
-        <form method="POST" action="index.html">
-         <button type="submit" title="LogOut?" style="border-radius: 50px;outline: none;"><span class="iconify" data-icon="zmdi-power" style="color: red;" data-inline="false"></span>
-     </button>
-      </form>
-      </center>
-        <center>
-          <table class="empdt">
-            <tr style="border-bottom: 1px solid #ab0000;background-color:#D3D3D3;"><th class="rit">ID</th><th class="rit">Name</th><th class="rit">Age</th><th class="rit">Gender</th><th class="rit">Email</th><th>PhoneNo</th></tr>
-            <tr><td class="rit">1</td><td class="rit">test1</td><td class="rit">11</td><td class="rit">male</td><td class="rit">test1@gmail.com</td><td>9191919191</td></tr>
-            <tr><td class="rit">2</td><td class="rit">test1</td><td class="rit">12</td><td class="rit">male</td><td class="rit">test2@gmail.com</td><td>9292929292</td></tr>
-            <tr><td class="rit">3</td><td class="rit">test1</td><td class="rit">13</td><td class="rit">male</td><td class="rit">test3@gmail.com</td><td>9393939393</td></tr>
-          </table>
-        </center>
-        <center>     
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- important meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Title -->
+  <title>Employee Dashboard</title>
+
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit|Monoton&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monoton&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <!-- Fontawesome -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Icons -->
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    div.inform {
+      background-color: rgba(255, 255, 255, 0.2);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+
+      width: 100%;
+      color: #1C1C1C;
+    }
+
+    hr {
+      box-shadow: none;
+      width: 80%;
+      border: none;
+      background: #a31016;
+      height: 1px;
+    }
+
+    div.notice {
+      width: 60%;
+      text-align: justify;
+      color: black;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background-color: rgba(171, 0, 0, 0.5);
+
+    }
+
+    div.line {
+      border: none;
+      width: 80%;
+      border-bottom: 1px solid lightgray;
+
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+      margin: 0px 0px 10px 0px;
+    }
+
+    th.heading {
+      font-family: 'Monoton', cursive;
+      font-weight: normal;
+    }
+
+    table.empdt {
+      width: 90%;
+      border: 1px solid #f5f3f3;
+      margin-top: 10%;
+      border-collapse: collapse;
+
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 14px 0 rgba(0, 0, 0, 0.2);
+      background-color: rgba(255, 255, 255, 0.6);
+      border-spacing: 0;
+      font-family: Candara;
+      color: black;
+    }
+
+    table.empdt th {
+
+      font-size: 20px;
+      padding: 15px 0;
+      font-weight: normal;
+    }
+
+    .rit {
+      border-right: 1px solid #ab0000;
+    }
+
+    table.empdt td {
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+
+<!-- Header -->  
+</head>
+
+<body onload="return false" oncopy="return false" oncut="return false" onpaste="return false">
+
+  <table class="header">
+    <tr>
+      <th colspan="2" class="heading">Account Dashboard</th>
+    </tr>
+    <tr>
+      <th class="subhead" colspan="2">Employees Data</th>
+    </tr>
+  </table>
+
+  <br /><br />
+
+  <br /><br />
+  <br /><br />
+
+  <br /><br />
+  <center>
+    <form method="POST" action="index.html">
+      <button type="submit" title="LogOut?" style="border-radius: 50px;outline: none;"><span class="iconify"
+          data-icon="zmdi-power" style="color: red;" data-inline="false"></span>
+      </button>
+    </form>
+  </center>
+  <center>
+    <table class="empdt">
+      <tr style="border-bottom: 1px solid #ab0000;background-color:#D3D3D3;">
+        <th class="rit">ID</th>
+        <th class="rit">Name</th>
+        <th class="rit">Age</th>
+        <th class="rit">Gender</th>
+        <th class="rit">Email</th>
+        <th>PhoneNo</th>
+      </tr>
+      <tr>
+        <td class="rit">1</td>
+        <td class="rit">test1</td>
+        <td class="rit">11</td>
+        <td class="rit">male</td>
+        <td class="rit">test1@gmail.com</td>
+        <td>9191919191</td>
+      </tr>
+      <tr>
+        <td class="rit">2</td>
+        <td class="rit">test1</td>
+        <td class="rit">12</td>
+        <td class="rit">male</td>
+        <td class="rit">test2@gmail.com</td>
+        <td>9292929292</td>
+      </tr>
+      <tr>
+        <td class="rit">3</td>
+        <td class="rit">test1</td>
+        <td class="rit">13</td>
+        <td class="rit">male</td>
+        <td class="rit">test3@gmail.com</td>
+        <td>9393939393</td>
+      </tr>
+    </table>
+  </center>
+  <center>
+</body>
+
 </html>

@@ -1,166 +1,191 @@
-<html>
-    <head>
-    <title>
-      Employee Login
-    </title>
-    <link rel = "icon" href =  
-        "https://image.flaticon.com/icons/fgfgsvg/183/183364.svg" 
-                type = "image/x-icon"> 
-        <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Kanit|Monoton&display=swap" rel="stylesheet">
-       <link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="style.css" rel="stylesheet">
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-        <script src="daslog.js"></script>
-       
-        <style>
-     
-     button.btnn 
-   {
-       transition: 0.2s;
-       float:right;
-       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-       color: white;
-       cursor: pointer;
-       font-weight: 500;
-       letter-spacing: 2px;
-       background-color: #ff3535;
-      padding: 8px 25px;
-      border: none;
-      font-size: 16px;
-      border-radius: 3px;
-   }
-   .fa-twitter
-   {
-       border: 1px solid;
-       padding: 5px;
-       border-radius: 3px;
-   }
-   a 
-   {
-        color:midnightblue;
-   }
-   div.inform 
-{
-  background-color: rgba(255, 255, 255,0.2);
-  -webkit-backdrop-filter: blur(8px);
-     backdrop-filter: blur(8px);
-     
-     width: 100%;
-     color:#1C1C1C;
-}
-hr 
-{
-  box-shadow: none;
-  width: 80%;
-  border: none;
-  background: #a31016;
-  height: 1px;
-}
-   p.EroE
-{
-    margin-top: 2%;
-    width: 80%;
-    text-align: center;
-    position: absolute;
-    color:red;
-    margin-left: 15%;
-    z-index: +7;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    
-}
-div.notice 
-   {
-       width: 60%;
-       text-align: justify;
-       color:black;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   }
-   body::-webkit-scrollbar-thumb {
-  background-color:rgba(171,0,0,0.5);
- 
-}
-   div.line 
-   {
-       border:none;
-       width: 80%;
-       border-bottom: 1px solid lightgray;
-     
-       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-       margin:0px 0px 10px 0px;
-   }
-  table.master 
-  {
-      margin-top: 8%;
-  }
-  th.heading 
-  {
-    font-family: 'Monoton', cursive;
-    font-weight: normal;
-  }
-      </style>
-    </head>
-    <body onload="captchaaa();" oncopy="return false" oncut="return false" onpaste="return false">
-        
-        <table class="header">
-            <tr><th colspan="2" class="heading">Log In Dashboard</th></tr>
-           <tr><th class="subhead" colspan="2">Enter Your Credentials</th></tr>
-        </table>
-        
-        <br/><br/>
-        <br/><br/>
+<!DOCTYPE html>
+<html lang="en">
 
-        <center>
-            <form name="logfrm" method="POST" action="dashboard.html">
-                <table class="master"> 
+<head>
+    <!-- important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                    <tr>
-                     
-                     <td colspan="2" class="tdd"><p class="dp">Log In?</p></td>
-                    </tr>
-                    <tr><th colspan="2"><br/><br/><br/><br/></th></tr>
-                    <tr>
-                        <th colspan="2">
-                            <table class="login">
+    <!-- Title -->
+    <title>Employee Login</title>
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit|Monoton&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monoton&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- Fontawesome -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Icons -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="daslog.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        button.btnn {
+            transition: 0.2s;
+            float: right;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            cursor: pointer;
+            font-weight: 500;
+            letter-spacing: 2px;
+            background-color: #ff3535;
+            padding: 8px 25px;
+            border: none;
+            font-size: 16px;
+            border-radius: 3px;
+        }
+
+        .fa-twitter {
+            border: 1px solid;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        a {
+            color: midnightblue;
+        }
+
+        div.inform {
+            background-color: rgba(255, 255, 255, 0.2);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            width: 100%;
+            color: #1C1C1C;
+        }
+
+        hr {
+            box-shadow: none;
+            width: 80%;
+            border: none;
+            background: #a31016;
+            height: 1px;
+        }
+
+        p.EroE {
+            margin-top: 2%;
+            width: 80%;
+            text-align: center;
+            position: absolute;
+            color: red;
+            margin-left: 15%;
+            z-index: +7;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+        }
+
+        div.notice {
+            width: 60%;
+            text-align: justify;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: rgba(171, 0, 0, 0.5);
+
+        }
+
+        div.line {
+            border: none;
+            width: 80%;
+            border-bottom: 1px solid lightgray;
+
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+            margin: 0px 0px 10px 0px;
+        }
+
+        table.master {
+            margin-top: 8%;
+        }
+
+        th.heading {
+            font-family: 'Monoton', cursive;
+            font-weight: normal;
+        }
+    </style>
+
+    <!-- Header -->
+</head>
+
+<body onload="captchaaa();" oncopy="return false" oncut="return false" onpaste="return false">
+
+    <table class="header">
+        <tr>
+            <th colspan="2" class="heading">Log In Dashboard</th>
+        </tr>
+        <tr>
+            <th class="subhead" colspan="2">Enter Your Credentials</th>
+        </tr>
+    </table>
+
+    <br /><br />
+    <br /><br />
+
+    <center>
+        <form name="logfrm" method="POST" action="dashboard.html">
+            <table class="master">
+
+                <tr>
+
+                    <td colspan="2" class="tdd">
+                        <p class="dp">Log In?</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2"><br /><br /><br /><br /></th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <table class="login">
                             <tr>
-                            
-                                <td class="fao"><input type="text" placeholder="Email ID" name="idd" id="text" autofocus="autofocus" /> </td>
-                                <td class="fafa"><span class="iconify" data-icon="mdi:account" data-inline="false"></span></td>
-                             <td class="space"></td>
-                      <td class="fao"><input type="password" placeholder="Password" id="pwd" name="pwdd">       </td>
-                          <td class="fafa" id="eye" onclick="eyes()"><i class="fa fa-eye"></i></td>
- 
+
+                                <td class="fao"><input type="text" placeholder="Email ID" name="idd" id="text"
+                                        autofocus="autofocus" /> </td>
+                                <td class="fafa"><span class="iconify" data-icon="mdi:account"
+                                        data-inline="false"></span></td>
+                                <td class="space"></td>
+                                <td class="fao"><input type="password" placeholder="Password" id="pwd" name="pwdd">
+                                </td>
+                                <td class="fafa" id="eye" onclick="eyes()"><i class="fa fa-eye"></i></td>
+
                             </tr>
-                            <tr><th colspan="3"><br><br></th></tr>
+                            <tr>
+                                <th colspan="3"><br><br></th>
+                            </tr>
                             <tr>
                                 <td id="captchaa" class="captcha" disabled colspan="2"></td>
-                                <td class="space"><span class="iconify"  onclick="captchaaa()" data-icon="entypo:cw" data-inline="false"></span></td>
-                                <td class="faoo" colspan="2"><input type="text" style="text-align: center;" placeholder="Captcha Code" id="captch"></td>
+                                <td class="space"><span class="iconify" onclick="captchaaa()" data-icon="entypo:cw"
+                                        data-inline="false"></span></td>
+                                <td class="faoo" colspan="2"><input type="text" style="text-align: center;"
+                                        placeholder="Captcha Code" id="captch"></td>
                             </tr>
-                            <tr><td colspan="3"><br><br></td></tr>
+                            <tr>
+                                <td colspan="3"><br><br></td>
+                            </tr>
                             <tr>
                                 <td colspan="3" class="links">
                                     <a href="#">Forgot Password?</a>
                                     <a href="#">UserID?</a>
                                 </td>
-                                <td colspan="2"><button type="submit" style="outline: none;" name="smt" class="btnn" onclick="return verify();">LOGIN</button></td>
-                                
-                            </tr>
-                            
-                          
-                            
+                                <td colspan="2"><button type="submit" style="outline: none;" name="smt" class="btnn"
+                                        onclick="return verify();">LOGIN</button></td>
 
-                            </table>
-                        </th>
-                    </tr>
-                </table>
-            </form>
-        </center>    
-    </body>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
 </html>
